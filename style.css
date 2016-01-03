@@ -1,0 +1,164 @@
+/*
+    Music Gamers' Almanac ver.5 Application, by Naoki Rinmous, MIT licensed.
+*/
+
+body {
+    background: #AAA;
+    font-family: Helvetica, Tahoma, Arial, 'Microsoft YaHei', STXihei, 华文细黑, 微软雅黑, SimSun, 宋体, Heiti, 黑体, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#global-wrap {
+    margin: 0 auto;
+    max-width: 24em;
+}
+
+.card {
+    background: white;
+    border: 1px solid #BBB;
+    -webkit-box-shadow: 0 0 1px #888;
+    -moz-box-shadow: 0 0 1px #888;
+    box-shadow: 0 0 1px #888;
+    display: block;
+    margin-top: 1em;
+}
+
+h1 {
+    color: #333;
+    display: block;
+    font-size: 1.4em;
+    padding-right: 0.75em;
+    text-align: right;
+}
+
+h1 small {
+    color: #666;
+    font-size: 0.6em;
+    font-weight: 300;
+    vertical-align: 1.2em;
+}
+
+h2#app-today-date {
+    color: #444;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 2.8em;
+    margin: 0;
+    text-align: center;
+}
+
+h2#app-today-date img {
+    vertical-align: top;
+}
+
+h2#app-today-machine {
+    color: #333;
+    border-bottom: 1px solid #DDD;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 2.8em;
+    margin: 0;
+    text-align: center;
+}
+
+h2#app-github {
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2#app-github a {
+    color: #5587d3;
+    text-decoration: none;
+}
+
+span#app-today-machine-direction {
+    color: #d35471;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0 0.1em;
+}
+
+div#almanac-positive, div#almanac-negative {
+    border-left-width: 1em;
+    display: block;
+    margin: 0;
+    margin-top: 1em;
+}
+
+div#almanac-positive {
+    border-left-color: #99D388;
+}
+
+div#almanac-negative {
+    border-left-color: #D38888;
+}
+
+div.almanac-item {
+    border-bottom: 1px solid #DDDDDD;
+    display: block;
+    padding: 0.9em 2em 0.5em 1.5em;
+}
+
+div.almanac-item:last-child {
+    border-bottom: none;
+}
+
+div.almanac-item img {
+    float: left;
+    height: 2.8em;
+    margin: 0 0.8em 0 0;
+    vertical-align: middle;
+}
+
+div.almanac-item h3 {
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin: 0;
+    vertical-align: middle;
+}
+
+div.almanac-item p {
+    color: #444;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#balloon-target {
+    position: fixed;
+    margin: 0;
+    right: 0;
+    top: 0;
+}
+
+#balloon-target .balloon {
+    background: #DDD;
+    border-right: 0.5em solid #5587d3;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    clear: right;
+    color: #555;
+    float: right;
+    font-weight: 300;
+    margin-top: 0.75em;
+    padding: 0.25em 0.5em;
+}
+
+#app-footer {
+    color: #888;
+    font-size: 0.8em;
+    margin: 4em 0 1em 0;
+    padding: 0.8em;
+    text-align: right;
+}
+
+#app-footer a {
+    color: #5587d3;
+    text-decoration: none;
+}
