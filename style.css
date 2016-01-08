@@ -162,3 +162,7 @@ div.almanac-item p {
     color: #5587d3;
     text-decoration: none;
 }
+
+#app-today-machine-type1, #app-today-machine-type2 {
+    color: #7655D3;
+}

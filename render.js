@@ -45,6 +45,14 @@ function createAlmanac(target, img_url, text, reason) {
 
     var direction = machine_directions[randomQuery(0) % machine_directions.length];
     document.getElementById("app-today-machine-direction").innerHTML = direction;
+    
+    document.getElementById("app-today-machine-type1").innerHTML = (function () {
+        var i = randomQuery(1) % almanac_games.length;
+        var game = almanac_games[i];
+        almanac_games.splice(i, 1);
+        return game;
+    })();
+    document.getElementById("app-today-machine-type2").innerHTML = almanac_games[randomQuery(2) % almanac_games.length];
 
     var i, r, rimg;
     for (i = 1; i <= COUNT_POSITIVE; i++) {
